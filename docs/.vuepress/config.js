@@ -1,13 +1,13 @@
 module.exports = {
   theme: 'vdoing',
-  title: "passerby's blog",
+  title: "Passerby's Blog",
   description: '',
   markdown: {
     lineNumbers: true, // 代码行号
   },
   themeConfig: {
     nav: [
-      { text: 'canvas', link: '/02.canvas', target: '_self', rel: '', items: [] }
+      // { text: 'canvas', link: '/02.canvas', target: '_self', rel: '', items: [] }
     ],
     sidebar: {
       mode: 'structuring', 
