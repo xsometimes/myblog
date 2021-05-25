@@ -2,6 +2,9 @@ module.exports = {
   theme: 'vdoing',
   title: "Passerby's Blog",
   description: '',
+
+  // base: '/', 
+
   markdown: {
     lineNumbers: true, // 代码行号
   },
