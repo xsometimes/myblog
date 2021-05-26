@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: ./hero.jpg
+# heroImage: ./hero.jpg
 heroText: RECORDING
 tagline: Passerby's Blog
 actionText: 快速上手 →

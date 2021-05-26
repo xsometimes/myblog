@@ -3,7 +3,7 @@ module.exports = {
   title: "Passerby's Blog",
   description: '',
 
-  // base: '/', 
+  base: '/myblog/', 
 
   markdown: {
     lineNumbers: true, // 代码行号
