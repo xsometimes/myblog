@@ -482,10 +482,9 @@ cube.rotation = new THREE.Vector3(0.5 * Math.PI, 0, 0);
 Three.js库里有两种不同的相机：正投影相机和透视相机（我们将在第3章仔细看一下如何使用这些相机）。
 
 #### 2.3.1 正投影相机和透视相机
-例chapter-02/07-both-cameras.html
 
-1. 透视视图，也是最自然的视图。距离相机越远的方块，被渲染得越小。
-<p align="center"><img src="./ThreejsC2005.png" alt="ThreejsC2005"></p>
+1. 透视视图，也是最自然的视图。距离相机越远的方块，被渲染得越小。[示例](https://xsometimes.github.io/learning-threejs/chapter-02/07-both-cameras.html)
+
 THREE.PersepectiveCamera将接受这些参数：
 |  参数   | 描述  |
 |  ----  | ----  |
