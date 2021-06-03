@@ -114,9 +114,9 @@ THREE.Scene()对象就像是所有这些对象的容器。这个对象本身并�
 
 #### 2.1.1 场景的基本功能
 
-场景渲染的时候THREE.Camera对象会自动添加进来，但是如果你喜欢，也可以手工添加。
+场景渲染的时候THREE.Camera对象会自动添加进来，但是如果你喜欢，也可以手工添加。见[示例](https://xsometimes.github.io/learning-threejs/chapter-01/01-basic-skeleton.html)
 
-<p align="center"><img src="./ThreejsC2001.png" alt="ThreejsC2001"></p>
+
 场景启动的时候场景中就已经有4个物体了，就是基本的地面、环境光、点光源和相机。
 
 在下面的代码片段里，我们将会逐一介绍控件区里的每个功能。
@@ -167,14 +167,10 @@ function render () {
 }
 ```
 
-附调试[demo](https://xsometimes.github.io/learning-threejs/chapter-01/01-basic-skeleton.html)
-
 #### 2.1.2 在场景中添加雾化效果
 
-通过fog属性可以为整个场景添加一种雾化效果。一个物体离得越远，就越模糊。
+通过fog属性可以为整个场景添加一种雾化效果。一个物体离得越远，就越模糊。见[示例](https://xsometimes.github.io/learning-threejs/chapter-02/02-foggy-scene.html)
 
-例chapter-02/02-foggy-scene.html,
-<p align="center"><img src="./ThreejsC2002.png" alt="ThreejsC2002"></p>
 
 在Three.js库里打开雾化效果很简单，只需在定义完场景后加上一行代码：
 
@@ -189,8 +185,6 @@ scene.fog = new THREE.Fog(0xffffff, 0.015, 100); // 这里定义了一白色的�
 scene.fog = new THREE.FogExp2(0xffffff, 0.015); // 这次我们不指定near属性和far属性，只给出颜色和浓度
 ```
 
-附调试[demo](https://xsometimes.github.io/learning-threejs/chapter-02/02-foggy-scene.html)
-
 #### 2.1.3 使用材质覆盖属性
 场景的overrideMaterial属性，是用来设置所有物体的材质。
 
@@ -198,11 +192,8 @@ scene.fog = new THREE.FogExp2(0xffffff, 0.015); // 这次我们不指定near属�
 // 当使用这个属性，所有添加到场景中的物体都会使用同样的材质，都是用同样的材质和颜色渲染的。
 scene.overrideMaterial = new THREE.MeshLambertMaterial({ color: 0xffffff });
 ```
-<p align="center"><img src="./ThreejsC2003.png" alt="ThreejsC2003"></p>
 
-使用MeshLambertMaterial对象作为材质，可以创建一些不发光的物体，而且这些物体可以对你添加到场景中的光源做出反应。
-
-附调试[demo](https://xsometimes.github.io/learning-threejs/chapter-02/03-forced-materials.html)
+使用MeshLambertMaterial对象作为材质，可以创建一些不发光的物体，而且这些物体可以对你添加到场景中的光源做出反应。[示例](https://xsometimes.github.io/learning-threejs/chapter-02/03-forced-materials.html)
 
 ### 2.2 使用几何和网络对象
 迄今为止，在前面的每个示例你都可以看到我们使用了几何对象和网格对象。如，要在场景中添加一个球体，我们是这么做的：
