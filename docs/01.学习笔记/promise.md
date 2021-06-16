@@ -1,6 +1,6 @@
 ---
 title: 手写Promise
-date: 2021-06-09 10:14:50
+date: 2021-06-03 10:14:50
 permalink: /pages/9c8a34/
 categories:
   - 学习笔记
